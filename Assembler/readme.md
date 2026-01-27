@@ -20,3 +20,4 @@ The binary can be built from the assembler module by running GO.BAT (adapt to yo
 * TOUPPER(S$) - convert a string to upper case.
 * TRANS(S$,T$) - translate characters in a string from one set to another (limited to codes 0..255).
 * TRANS%(B$,T%()) - translate characters in a string from one set to another (converts codes 0..256).
+* VGA - contains SETMODE%(I%) and SETPIXEL(X%,Y%,C%) as a starting point for accessing the 640x480x16 VGA mode.
