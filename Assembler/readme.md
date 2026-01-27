@@ -6,7 +6,7 @@ The binary can be built from the assembler module by running GO.BAT (adapt to yo
 * BITCOUNT (I%) - count the '1'-bits in an integer.
 * BITS... - a whole bunch of functions combined into a larger module, demonstrating two methods of loading the binary.
 * CHKSUM%(S$,C%) - calculate the checksum over the characters in a string.
-* GETSEG(DS%,CS%) . return the CS and DS segments of a called subroutine (CS==DS).
+* GETSEG(BCS%,BIP%,SCS%,SIP%) - return the CS segment and the IP of the BASIC interpreter and the called subroutine.
 * INT(INT%,AX%,BX%,CX%,DX%,DS%,ES%,SI%,DI%) - call an interrupt with a given set of registers.
 * MEMSET(MAT%(0),L%,V%) - set the values of an array to a constant value.
 * OCC%(A$,I%,N%) - count the occurances of one specific character code in a astring
