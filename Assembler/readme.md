@@ -5,11 +5,12 @@ The binary can be built from the assembler module by running GO.BAT (adapt to yo
 * BIN$(I%,S$) - Return a string of "0", "1" characters with the binary value of I%.
 * BITCOUNT (I%) - count the '1'-bits in an integer.
 * BITS... - a whole bunch of functions combined into a larger module, demonstrating two methods of loading the binary.
-* CHKSUM%(S$,C%) - calculate the checksum over the characters in a string.
+* CHKSUM(S$,C%) - calculate the checksum over the characters in a string.
 * GETSEG(BCS%,BIP%,SCS%,SIP%) - return the CS segment and the IP of the BASIC interpreter and the called subroutine.
 * INT(INT%,AX%,BX%,CX%,DX%,DS%,ES%,SI%,DI%) - execute an interrupt with a given set of registers.
 * MEMSET(MAT%(0),L%,V%) - set the values of an array to a constant value.
-* OCC%(A$,I%,N%) - count the occurances of one specific character code in a astring
+* OCC(A$,I%,N%) - count the occurances of one specific character code in a astring
+* PEEKS(SEG%,OFF%) - two peek routines which use segment and offset without requiring  DEF SEG = instruction
 * REV(A$,B$) - reverse the characters in a string
 * STATSXY() - combines SUM, SUM2, SUMXY for statistical analysis using the 80x87 math coprocessor, includes floating point conversion between IEEE-754 and MBF.
 * SUM(X#(),N%,SX#) - calculate the sum of array elements using the 80x87 math coprocessor, includes floating point conversion between IEEE-754 and MBF.
@@ -19,5 +20,7 @@ The binary can be built from the assembler module by running GO.BAT (adapt to yo
 * TOLOWER(S$) - convert a string to lower case.
 * TOUPPER(S$) - convert a string to upper case.
 * TRANS(S$,T$) - translate characters in a string from one set to another (limited to codes 0..255).
-* TRANS%(B$,T%()) - translate characters in a string from one set to another (converts codes 0..256).
-* VGA - contains SETMODE%(I%) and SETPIXEL(X%,Y%,C%) as a starting point for accessing the 640x480x16 VGA mode.
+* TRANS(B$,T%()) - translate characters in a string from one set to another (converts codes 0..256).
+* VGA - contains SETMODE(I%), SETCOLOR(C%), SETPIXEL(X%,Y%) and DRAWLINE(X0%,Y0%,X1%,Y1%) as a starting point for accessing the 640x480x16 VGA and 800x600x16 VESA modes.
+
+* GO.BAT - a simple batch file for assembling a file and converting the *.EXE to *.BIN
