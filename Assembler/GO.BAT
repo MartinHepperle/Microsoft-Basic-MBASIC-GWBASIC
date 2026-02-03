@@ -12,9 +12,9 @@ REM store these executables files.
 REM SET PATH=\MASM;\MIXLANG;%PATH%
 REM
 REM Usage:
-REM C:> GO
+REM  GO
 REM or
-REM C:> GO SUM
+REM  GO SUM
 REM
 REM User configurable name of default assembler module
 SET PROG=TOUPPER$
@@ -42,6 +42,9 @@ EXE2BIN %PROG%.EXE %PROG%.BIN
 REM Show file size for calculating required code array DIM
 ECHO.
 DIR %PROG%.BIN | FIND /I %PROG%
+REM Clean up
+DEL %PROG%.OBJ
+DEL %PROG%.EXE
 REM Restore
 SET PATH=%P%
 SET P=
