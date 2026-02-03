@@ -21,6 +21,6 @@ The binary can be built from the assembler module by running GO.BAT (adapt to yo
 * TOUPPER(S$) - convert a string to upper case.
 * TRANS(S$,T$) - translate characters in a string from one set to another (limited to codes 0..255).
 * TRANS(B$,T%()) - translate characters in a string from one set to another (converts codes 0..256).
-* VGA - contains SETMODE(I%), SETCOLOR(C%), SETPIXEL(X%,Y%) and DRAWLINE(X0%,Y0%,X1%,Y1%) as a starting point for accessing the 640x480x16 VGA and 800x600x16 VESA modes.
+* VGA - contains SETMODE(M%), SETCOLOR(C%), SETPIXEL(X%,Y%) and DRAWLINE(X0%,Y0%,X1%,Y1%) for accessing the 640x480x16 VGA and 800x600x16 VESA modes.
 
 * GO.BAT - a simple batch file for assembling a file and converting the *.EXE to *.BIN
