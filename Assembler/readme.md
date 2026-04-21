@@ -11,7 +11,7 @@ The corresponding binary file can be built from the assembler module by running 
 * GETSEG(BCS%,BIP%,SCS%,SIP%) - return the CS segment and the IP of the BASIC interpreter and the called subroutine.
 * INT(INT%,AX%,BX%,CX%,DX%,DS%,ES%,SI%,DI%) - execute an interrupt with a given set of registers.
 * MEMSET(MAT%(0),L%,V%) - set the values of an array to a constant value.
-* OCC(A$,I%,N%) - count the occurances of one specific character code in a a string
+* OCC(A$,C%,N%) - count the occurances of one specific character code in a a string
 * PEEKS(SEG%,OFF%) - two peek routines which use segment and offset without requiring a preceding DEF SEG = instruction
 * REV(A$,B$) - reverse the characters in a string
 * STATSXY() - combines SUM, SUM2, SUMXY for statistical analysis using the 80x87 math coprocessor, includes floating point conversion between IEEE-754 and MBF.
