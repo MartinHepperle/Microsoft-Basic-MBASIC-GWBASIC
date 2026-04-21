@@ -5,8 +5,8 @@ The corresponding binary file can be built from the assembler module by running 
 
 * BIN$(I%,S$) - Return a string of "0", "1" characters with the binary value of I%.
 * BITCOUNT (I%) - count the '1'-bits in an integer.
-* BITS... - a whole bunch of functions combined into a larger module, demonstrating two methods of loading the binary.
-* CHKSUM(S$,C%) - calculate the checksum or the CRC-16 over the characters in a string.
+* BITS ... - a whole bunch of functions combined into a larger module, demonstrating two methods of loading the binary.
+* CHKSUM ... CHKSUM(S$,C%), CRC16(S$,C%) - calculate the checksum or the CRC-16 over the characters in a string.
 * DOSMEM ... - functions to allocate and deallocate memory outside of GWBASIC's memory segment and to copy data from one segment to another.
 * GETSEG(BCS%,BIP%,SCS%,SIP%) - return the CS segment and the IP of the BASIC interpreter and the called subroutine.
 * INT(INT%,AX%,BX%,CX%,DX%,DS%,ES%,SI%,DI%) - execute an interrupt with a given set of registers.
@@ -23,6 +23,6 @@ The corresponding binary file can be built from the assembler module by running 
 * TOUPPER(S$) - convert a string to upper case.
 * TRANS(S$,T$) - translate characters in a string from one set to another (limited to codes 0..255).
 * TRANS(B$,T%()) - translate characters in a string from one set to another (converts codes 0..256).
-* VGA - contains SETMODE(M%), SETCOLOR(C%), SETPIXEL(X%,Y%) and DRAWLINE(X0%,Y0%,X1%,Y1%) for accessing the 640x480x16 VGA and 800x600x16 VESA modes.
+* VGA ... - contains SETMODE(M%), SETCOLOR(C%), SETPIXEL(X%,Y%) and DRAWLINE(X0%,Y0%,X1%,Y1%) for accessing the 640x480x16 VGA and 800x600x16 VESA modes.
 
 * GO.BAT - a simple batch file for assembling a file and converting the *.EXE to *.BIN
