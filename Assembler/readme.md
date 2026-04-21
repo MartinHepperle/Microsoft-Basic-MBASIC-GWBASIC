@@ -1,4 +1,5 @@
 Examples for using BASIC with Assembler routines.
+Most routines can be used with MBASIC as well as GWBASIC.
 Each archive contains the assembler source, the assembled binary and an example program.
 The corresponding binary file can be built from the assembler module by running GO.BAT (adapt to your environment).
 
@@ -6,7 +7,7 @@ The corresponding binary file can be built from the assembler module by running 
 * BITCOUNT (I%) - count the '1'-bits in an integer.
 * BITS... - a whole bunch of functions combined into a larger module, demonstrating two methods of loading the binary.
 * CHKSUM(S$,C%) - calculate the checksum or the CRC-16 over the characters in a string.
-* DOSMEM ... - functions to allocate and deallocate memory outside of GWBASIC's memeory segment and to copy data from one segment to another.
+* DOSMEM ... - functions to allocate and deallocate memory outside of GWBASIC's memory segment and to copy data from one segment to another.
 * GETSEG(BCS%,BIP%,SCS%,SIP%) - return the CS segment and the IP of the BASIC interpreter and the called subroutine.
 * INT(INT%,AX%,BX%,CX%,DX%,DS%,ES%,SI%,DI%) - execute an interrupt with a given set of registers.
 * MEMSET(MAT%(0),L%,V%) - set the values of an array to a constant value.
