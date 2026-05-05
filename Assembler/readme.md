@@ -3,7 +3,7 @@ Most routines can be used with MBASIC as well as GWBASIC.
 Each archive contains the assembler source, the assembled binary and an example program.
 The corresponding binary file can be built from the assembler module by running GO.BAT (adapt to your environment).
 
-* BIN$(I%,S$) - Return a string of "0", "1" characters with the binary value of I%.
+* BIN$(I%,S$) - return a string of "0", "1" characters with the binary value of I%.
 * BITCOUNT (I%) - count the '1'-bits in an integer.
 * BITS ... - a whole bunch of functions combined into a larger module, demonstrating two methods of loading the binary.
 * CHKSUM ... CHKSUM(S$,C%), CRC16(S$,C%) - calculate the checksum or the CRC-16 over the characters in a string.
@@ -20,7 +20,7 @@ The corresponding binary file can be built from the assembler module by running 
 * SUM(X#(),N%,SX#) - calculate the sum of array elements using the 80x87 math coprocessor, includes floating point conversion between IEEE-754 and MBF.
 * SUM2(X#(),N%,SQX#) - calculate the sum of the square of array elements using the 80x87 math coprocessor, includes floating point conversion between IEEE-754 and MBF.
 * SUMXY(X#(),Y#(),N%,SXY#) - calculate the sum of the product of corresponding array elements using the 80x87 math coprocessor, includes floating point conversion between IEEE-754 and MBF.
-* TICKS (T%) - Wait until T% timer ticks (18.2 per second) have passed.
+* TICKS (T%) - wait until T% timer ticks (18.2 per second) have passed.
 * TOLOWER(S$) - convert a string to lower case.
 * TOUPPER(S$) - convert a string to upper case.
 * TRANS(S$,T$) - translate characters in a string from one set to another (limited to codes 0..254).
