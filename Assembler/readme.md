@@ -10,6 +10,7 @@ The corresponding binary file can be built from the assembler module by running 
 * DOSMEM ... - functions to allocate and deallocate memory outside of GWBASIC's memory segment and to copy data from one segment to another.
 * EMS ... - functions to allocate and deallocate memory in expanded memory and to copy data from one segment to another.
 * GETSEG(BCS%,BIP%,SCS%,SIP%) - return the CS segment and the IP of the BASIC interpreter and the called subroutine.
+* HMS - a set of functions to handle times in HMS format (add, subtract).
 * INT(INT%,AX%,BX%,CX%,DX%,DS%,ES%,SI%,DI%) - execute an interrupt with a given set of registers.
 * IROOT(I%,R%) - calculate the integer root of an integer.
 * MATFILL - a set of square matrix routines to quickly set diagonals, rows or columns or fill matrices.
