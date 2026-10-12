@@ -5,6 +5,7 @@ The corresponding binary file can be built from the assembler module by running 
 
 * BIN$(I%,S$) - return a string of "0", "1" characters with the binary value of I%.
 * BITCOUNT (I%) - count the '1'-bits in an integer.
+* BITMAP ... - functions to manipulate bits in a horizontal bitmap row wrapped into a string.
 * BITS ... - a whole bunch of functions combined into a larger module, demonstrating two methods of loading the binary.
 * CHKSUM ... CHKSUM(S$,C%), CRC16(S$,C%) - calculate the checksum or the CRC-16 over the characters in a string.
 * DOSMEM ... - functions to allocate and deallocate memory outside of GWBASIC's memory segment and to copy data from one segment to another.
